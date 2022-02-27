@@ -38,16 +38,20 @@ function App() {
   dia_final.setUTCFullYear(2023, 1, 15);
 
   var dias_restantes = dia_final.getTime() - date_ob.getTime();
+
+  const button = {
+    color: "inherit",
+  };
   return (
     <div className="App">
       <header className="App-header">
         <p>Hoy es {date_ob.toLocaleDateString()}</p>
-        <a href="https://app.osmosis.zone/pools">
+        <a href="https://app.osmosis.zone/pools" style={button}>
           Osmosis me va a hacer millonaria!
         </a>
         <p>
           Faltan <strong>{dias_restantes / (1000 * 3600 * 24)}</strong> dias
-          para que vicky sea libre!
+          para que Vicky sea libre!
         </p>
         <button onClick={() => get_image()}>Mostrame otro gato!</button>
         <div id="image"></div>
