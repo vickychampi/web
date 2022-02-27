@@ -40,7 +40,7 @@ function App() {
   var dias_restantes = dia_final.getTime() - date_ob.getTime();
 
   const button = {
-    color: "inherit",
+    color: "white",
   };
   return (
     <div className="App">
