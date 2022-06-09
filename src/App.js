@@ -35,7 +35,7 @@ get_image();
 function App() {
   let date_ob = new Date();
   let dia_final = new Date();
-  dia_final.setUTCFullYear(2023, 1, 15);
+  dia_final.setUTCFullYear(2023, 12, 31);
 
   var dias_restantes = dia_final.getTime() - date_ob.getTime();
 
@@ -50,8 +50,9 @@ function App() {
           Osmosis me va a hacer millonaria!
         </a>
         <p>
-          Faltan <strong>{dias_restantes / (1000 * 3600 * 24)}</strong> dias
-          para que Vicky sea libre!
+          Faltan{" "}
+          <strong>{parseInt(dias_restantes / (1000 * 3600 * 24), 10)}</strong>{" "}
+          dias para que Vicky sea libre!
         </p>
         <button onClick={() => get_image()}>Mostrame otro gato!</button>
         <div id="image"></div>
