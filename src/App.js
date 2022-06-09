@@ -35,7 +35,7 @@ get_image();
 function App() {
   let date_ob = new Date();
   let dia_final = new Date();
-  dia_final.setUTCFullYear(2022, 12, 31);
+  dia_final.setUTCFullYear(2022, 11, 31);
 
   var dias_restantes = dia_final.getTime() - date_ob.getTime();
 
